@@ -40,5 +40,19 @@ nav{
   
 }
 @media only screen and (max-width: 480px){
-  
+  .nav-links{
+    display: none;
+  }
+  .nav-links.active{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .line{
+    width: 25px;
+    height: 3px;
+    margin: 10px 25px;
+  }
 }
