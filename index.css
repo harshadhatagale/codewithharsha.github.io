@@ -13,11 +13,12 @@ nav{
   width: 100vw;
   height: 80px;
   align-items: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .logo a{
   color: yellow;
-  font-weight: 800;
-  font-family: roboto;
+  font-weight: 900;
+  font-family: Roboto;
   font-size: 1.5em;
 }
 .nav-links ul li a{
@@ -37,34 +38,7 @@ nav{
 }
 
 @media only screen and (max-width: 768px){
-    .nav-links{
-    display: none;
-  }
-  .nav-links.active{
-    display: block;
-  }
-  .hamburger{
-    display: block;
-    cursor: pointer;
-  }
-  .line{
-    width: 35px;
-    height: 5px;
-    margin: 10px;
-    background: white;
-  }
-  .navbar.active{
-    height: 100vh;
-  }
-  .right{
-    display: flex;
-    width: 100vw;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-@media only screen and (max-width: 480px){
-  .nav-links{
+ .nav-links{
     display: none;
   }
   .nav-links ul{
@@ -82,7 +56,15 @@ nav{
     width: 100%;
   }
   .nav-links ul li a{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    width: 70%;
+    text-align: center;
+  }
+  .nav-links ul li{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .nav-links.active{
     display: block;
@@ -109,7 +91,67 @@ nav{
     
   }
   .nav-links.active{
-    height: 80vh;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 480px){
+  .nav-links{
+    display: none;
+  }
+  .nav-links ul{
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-links.active ul{
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
+    width: 100%;
+  }
+  .nav-links ul li a{
+    font-size: 1.5em;
+    width: 70%;
+    text-align: center;
+  }
+  .nav-links ul li{
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-links.active{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .line{
+    width: 35px;
+    height: 5px;
+    margin: 10px;
+    background: white;
+  }
+  .navbar.active{
+    height: 100vh;
+    flex-direction: column;
+  }
+  .right{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .nav-links.active{
+    height: 85vh;
     width: 100vw;
     display: flex;
     opacity: 1;
