@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: poppins;
+}
+nav{
+  background: blue;
+  display: flex;
+  justify-content: space-around;
+  width: 100vh;
+  height: 80px;
+  align-items: center;
+}
+.logo a{
+  color: yellow;
+  font-weight: 800;
+  font-family: roboto;
+}
+.nav-links ul li a{
+  color: white;
+  font-weight: 400;
+}
