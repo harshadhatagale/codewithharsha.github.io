@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="stylesheet" href="index.css">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
   </head>
   <body>
+      <nav class="navbar">
+    <div class="right">
+     <div class="logo">
+      <a href="">CodeWithHarsha</a>
+    </div>
+    <div class="hamburger" onclick="open_nav()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script type="text/javascript" charset="utf-8">
+    function open_nav(){
+      let nav= document.querySelector(".navbar");
+      nav.classList.toggle("active");
+      let nav_links= document.querySelector(".nav-links");
+      nav_links.classList.toggle("active");
+    }
+  </script>
     <h1>About Us</h1>
     <p>This is my about us</p>
   </body>
