@@ -2,18 +2,19 @@
 <html>
 
 <head>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/jpg" href="logo (2).jpg"/>
+  <link rel="icon" type="image/jpg" href="assets/images/logo (2).jpg"/>
   <title>
     Code With Harshad
   </title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
   <nav class="navbar">
     <div class="right">
@@ -35,7 +36,26 @@
       </ul>
     </div>
   </nav>
+  <main>
+    <div class="developer_img">
+      <img src="assets/images/img1.jpg" alt="" />
+    </div>
+    <div class="intro_anim">
+      <p>Hii, I am</p>
+  <span id="element"></span>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </div>
+  </main>
   <script type="text/javascript" charset="utf-8">
+      var typed = new Typed('#element', {
+      strings: ['Harshad', 'Frotend developer', 'backend developer', 'video editor', 'Youtuber'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      startDelay: 500,
+      backDelay: 1000,
+      loop: true, // Enable looping
+      loopCount: Infinity, // Set loop count to infinity
+      });
     function open_nav(){
       let nav= document.querySelector(".navbar");
       nav.classList.toggle("active");
