@@ -6,6 +6,16 @@
   list-style: none;
   font-family: poppins;
 }
+.social_m_links img{
+  width: 2em;
+  color: black;
+}
+.social_m_links{
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  align-items: center;
+}
 .intro_anim p{
   font-size: 4em;
 }
@@ -203,5 +213,10 @@ nav{
   font-weight: 500;
   color: blue;
   font-family: ubuntu;
+}
+.social_m_links{
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
 }
 }
