@@ -1,6 +1,14 @@
 .div1 {
   width: 100vw;
 }
+.div1{
+  
+}
 .div1 img{
   width: 100%;
+}
+h3{
+  color: white;
+  font-size: 2em;
+  font-family: poppins;
 }

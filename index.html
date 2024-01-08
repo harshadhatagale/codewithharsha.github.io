@@ -8,22 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/jpg" href="assets/images/logo (2).jpg" />
-  <title>
+<title>
   Code With Harshad
-  </title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+</title>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <div class="loading">
+    <p>Loading ....</p>
+  </div>
+<main class="main">
   <nav class="navbar">
-    <div class="right">
-      <div class="logo">
-        <a href="/">CodeWith<b>Harsha</b></a>
-      </div>
-      <div class="hamburger" onclick="open_nav()">
-         <div class="line"></div>
-         <div class="line"></div>
-         <div class="line"></div>
+<div class="right">
+<div class="logo">
+<a href="/">CodeWith<b>Harsha</b></a>
+</div>
+<div class="hamburger" onclick="open_nav()">
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
 </div>
 </div>
 <div class="nav-links">
@@ -40,19 +44,32 @@
 </ul>
 </div>
 </nav>
-<main>
 <div class="intro_anim">
-  <div class="left">
-    <p>
+<div class="left">
+<p>
 Hii 👋 , I am
 </p>
 <span id="element"></span>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  </div>
-  <div class="right">
-    <img src="assets/images/developer.png" alt="" />
-  </div>
 </div>
+<div class="right">
+<img src="assets/images/developer.png" alt="" />
+</div>
+</div>
+<footer>
+<div class="note">
+<p>
+©codewithharsha.com 2023-24
+</p>
+</div>
+<div class="imp_links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+</ul>
+</div>
+</footer>
 </main>
 <script type="text/javascript" charset="utf-8">
 var typed = new Typed('#element', {
@@ -70,19 +87,11 @@ nav.classList.toggle("active");
 let nav_links = document.querySelector(".nav-links");
 nav_links.classList.toggle("active");
 }
+let progress= 30;
+window.onload=function(){
+  loading= document.querySelector(".loading").classList.toggle("disable");
+  main= document.querySelector(".main").classList.toggle("active");
+}
 </script>
-
-<footer>
-  <div class="note">
-      <p>©codewithharsha.com 2023-24</p>
-  </div>
-  <div class="imp_links">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Portfolio</a></li>
-    </ul>
-  </div>
-</footer>
 </body>
 </html>
